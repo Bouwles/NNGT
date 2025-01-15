@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riffs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">Nercessian's Necessary Guitar Tunes - Riffs</div>
+
+    <!-- Back to Homepage Button -->
+    <div class="back-container">
+      <button class="big-button" onclick="goToHomepage()">Back to Homepage</button>
+    </div>
+
+    <!-- Riffs List -->
+    <div id="riffs-list">
+      <div class="button-container">
+        <button class="riff-button" onclick="showRiff('riff1')">Beginner Riff</button>
+        <button class="riff-button" onclick="showRiff('riff2')">Slightly Challenging Riff</button>
+        <button class="riff-button" onclick="showRiff('riff3')">Intermediate Riff</button>
+        <button class="riff-button" onclick="showRiff('riff4')">Advanced Beginner Riff</button>
+        <button class="riff-button" onclick="showRiff('riff5')">Moderate Riff</button>
+        <button class="riff-button" onclick="showRiff('riff6')">Difficult Riff</button>
+        <button class="riff-button" onclick="showRiff('riff7')">Expert Riff</button>
+        <button class="riff-button bonus-riff" onclick="showRiff('duet')">🎶 Bonus Duet Riff</button>
+      </div>
+    </div>
+
+    <!-- Riff Content Section -->
+    <div id="riff-content" class="hidden">
+      <h1 id="riff-title"></h1>
+      <img id="riff-image" src="" alt="Riff Diagram" class="riff-image" />
+      <button class="big-button" onclick="closeRiff()">Back to Riffs</button>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Nercessian's Necessary Guitar Tunes. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Lessons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      Nercessian's Necessary Guitar Tunes - Video Lessons
+    </div>
+
+    <!-- Back to Homepage Button -->
+    <div class="back-container">
+      <button class="big-button" onclick="goToHomepage()">
+        Back to Homepage
+      </button>
+    </div>
+
+    <!-- Lesson List -->
+    <div id="lesson-list">
+      <div class="button-container">
+        <button class="video-button" onclick="loadLesson(1)">
+          Lesson 1: Understanding the Guitar
+        </button>
+        <button class="video-button" onclick="loadLesson(2)">
+          Lesson 2: Basic Chords
+        </button>
+        <button class="video-button" onclick="loadLesson(3)">
+          Lesson 3: Strumming Techniques
+        </button>
+        <button class="video-button" onclick="loadLesson(4)">
+          Lesson 4: Scales and Melodies
+        </button>
+        <button class="video-button" onclick="loadLesson(5)">
+          Lesson 5: Playing a Song
+        </button>
+      </div>
+    </div>
+
+    <!-- Lesson Content -->
+    <div id="lesson-content" class="hidden">
+      <h1 id="lesson-title"></h1>
+      <video id="lesson-video" controls>
+        <source id="video-source" src="" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p id="lesson-description"></p>
+
+      <!-- Back to Lessons Button -->
+      <div class="back-container">
+        <button class="big-button" onclick="closeLesson()">
+          Back to Lessons
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Nercessian's Necessary Guitar Tunes. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

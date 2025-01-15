@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scales</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">Nercessian's Necessary Guitar Tunes - Scales</div>
+
+    <!-- Back to Homepage Button -->
+    <div class="back-container">
+      <button class="big-button" onclick="goToHomepage()">
+        Back to Homepage
+      </button>
+    </div>
+
+    <!-- Scales List -->
+    <div id="scales-list">
+      <div class="button-container">
+        <button class="scale-button" onclick="showScale('c-sharp-major')">
+          C# Major
+        </button>
+        <button
+          class="scale-button"
+          onclick="showScale('d-sharp-pentatonic-blues')"
+        >
+          D# Pentatonic Blues
+        </button>
+        <button
+          class="scale-button"
+          onclick="showScale('a-sharp-pentatonic-neutral')"
+        >
+          A# Pentatonic Neutral
+        </button>
+        <button class="scale-button" onclick="showScale('c-locrian')">
+          C Locrian
+        </button>
+      </div>
+    </div>
+
+    <!-- Scale Image Section -->
+    <div id="scale-content" class="hidden">
+      <h1 id="scale-title"></h1>
+      <img id="scale-image" src="" alt="Scale Diagram" class="scale-image" />
+      <button class="big-button" onclick="closeScale()">Back to Scales</button>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Nercessian's Necessary Guitar Tunes. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
